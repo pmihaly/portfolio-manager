@@ -1,0 +1,50 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "plugins": ["@nrwl/nx", "fp", "sonarjs", "no-else"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@nrwl/nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": ["*"]
+              }
+            ]
+          }
+        ],
+        "max-len": ["error", { "code": 80 }],
+        "max-depth": ["error", 3],
+        "no-else/no-else": 2,
+        "curly": ["error", "multi-or-nest"],
+        "max-lines-per-function": ["error", { "max": 10 }]
+      },
+      "extends": ["plugin:fp/recommended", "plugin:sonarjs/recommended"]
+    },
+    {
+      "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
+      "extends": ["plugin:@nrwl/nx/typescript"],
+      "rules": {
+        "fp/no-nil": 0,
+        "fp/no-unused-expression": 0,
+        "max-lines-per-function": 0
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@nrwl/nx/typescript"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nrwl/nx/javascript"],
+      "rules": {}
+    }
+  ]
+}
