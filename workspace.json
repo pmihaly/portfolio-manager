@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "calculate-stats": "libs/calculate-stats"
+    "calculate-stats": "libs/calculate-stats",
+    "event": "libs/event"
   }
 }
