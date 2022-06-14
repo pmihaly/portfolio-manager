@@ -33,7 +33,8 @@
       "rules": {
         "fp/no-nil": 0,
         "fp/no-unused-expression": 0,
-        "max-lines-per-function": 0
+        "max-lines-per-function": 0,
+        "sonarjs/no-duplicate-string": 0
       }
     },
     {
