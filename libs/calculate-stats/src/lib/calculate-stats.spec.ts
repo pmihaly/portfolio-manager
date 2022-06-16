@@ -1,7 +1,6 @@
 import { Event } from '@portfolio-manager-v2/event'
 import { map } from 'fp-ts/lib/ReadonlyRecord'
-import { calculateStats } from './calculate-stats'
-import { statisticCalculators } from './stats/statistic-calculators'
+import { calculateStats, statisticCalculators } from './calculate-stats'
 
 describe('calculateStats', () => {
   it('should use correct stats', () => {

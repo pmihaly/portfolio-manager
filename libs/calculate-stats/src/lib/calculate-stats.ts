@@ -1,7 +1,11 @@
 import { Event } from '@portfolio-manager-v2/event'
 import { none } from 'fp-ts/lib/Option'
 import { mapWithIndex } from 'fp-ts/lib/ReadonlyRecord'
-import { statisticCalculators } from './stats/statistic-calculators'
+import { calculateGrossPLSinceStart } from './statistic-calculators'
+
+export const statisticCalculators = {
+  'gross-pl-since-start': calculateGrossPLSinceStart,
+}
 
 export const calculateStats =
   (statFns = statisticCalculators) =>
