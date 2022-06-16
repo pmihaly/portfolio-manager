@@ -553,11 +553,6 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@mobily/ts-belt@3.12.0":
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/@mobily/ts-belt/-/ts-belt-3.12.0.tgz#8dd2d362f2466eb3f903afd0f4bf784b7e215c69"
-  integrity sha512-3eY87cZztoPm71h9VsFV9z981GYNXrmbsmBHSv14ux7UWuCEnSFxNAx8TMR1V1NqSF6k1eLzKGnYrC757umCyw==
-
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -1922,6 +1917,11 @@ form-data@^3.0.0:
     asynckit "^0.4.0"
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
+
+fp-ts@2.12.1:
+  version "2.12.1"
+  resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.12.1.tgz#e389488bfd1507af06bd5965e97367edcd4fabad"
+  integrity sha512-oxvgqUYR6O9VkKXrxkJ0NOyU0FrE705MeqgBUMEPWyTu6Pwn768cJbHChw2XOBlgFLKfIHxjr2OOBFpv2mUGZw==
 
 fs-constants@^1.0.0:
   version "1.0.0"

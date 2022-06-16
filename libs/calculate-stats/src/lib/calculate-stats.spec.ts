@@ -1,5 +1,5 @@
-import { D } from '@mobily/ts-belt'
 import { Event } from '@portfolio-manager-v2/event'
+import { map } from 'fp-ts/lib/ReadonlyRecord'
 import { calculateStats } from './calculate-stats'
 import { statisticCalculators } from './stats/statistic-calculators'
 
@@ -24,9 +24,11 @@ describe('calculateStats', () => {
       },
     ]
 
-    const statCalculators = D.map(statisticCalculators, (calculatorFn) =>
-      jest.fn(calculatorFn)
-    )
+    const statCalculators = map(
+      (
+        calculatorFn: typeof statisticCalculators[keyof typeof statisticCalculators]
+      ) => jest.fn(calculatorFn)
+    )(statisticCalculators)
 
     calculateStats(statCalculators)(['gross-pl-since-start'])(events)
 
