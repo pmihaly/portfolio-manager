@@ -22,10 +22,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@portfolio-manager-v2/calculate-stats": [
+      "@portfolio-manager/calculate-stats": [
         "libs/calculate-stats/src/index.ts"
       ],
-      "@portfolio-manager-v2/event": ["libs/event/src/index.ts"]
+      "@portfolio-manager/event": ["libs/event/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

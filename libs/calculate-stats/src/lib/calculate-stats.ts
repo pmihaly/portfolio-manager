@@ -1,4 +1,4 @@
-import { Event } from '@portfolio-manager-v2/event'
+import { Event } from '@portfolio-manager/event'
 import { none } from 'fp-ts/lib/Option'
 import { mapWithIndex } from 'fp-ts/lib/ReadonlyRecord'
 import { calculateGrossPLSinceStart } from './statistic-calculators'

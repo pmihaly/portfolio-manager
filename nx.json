@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "portfolio-manager-v2",
+  "npmScope": "portfolio-manager",
   "affected": {
     "defaultBase": "master"
   },

@@ -1,4 +1,4 @@
-import { isReportEvent, ReportEvent } from '@portfolio-manager-v2/event'
+import { isReportEvent, ReportEvent } from '@portfolio-manager/event'
 import { filter } from 'fp-ts/lib/Array'
 import { flow, pipe } from 'fp-ts/lib/function'
 import { groupBy, head, last } from 'fp-ts/lib/NonEmptyArray'

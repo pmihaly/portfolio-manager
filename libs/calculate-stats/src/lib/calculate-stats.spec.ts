@@ -1,4 +1,4 @@
-import { Event } from '@portfolio-manager-v2/event'
+import { Event } from '@portfolio-manager/event'
 import { map } from 'fp-ts/lib/ReadonlyRecord'
 import { calculateStats, statisticCalculators } from './calculate-stats'
 

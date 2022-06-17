@@ -1,4 +1,4 @@
-import { Event } from '@portfolio-manager-v2/event'
+import { Event } from '@portfolio-manager/event'
 import { calculateGrossPLSinceStart } from './calculate-gross-pl-since-start'
 
 describe('calculateGrossPLSinceStart', () => {
